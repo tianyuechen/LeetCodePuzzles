@@ -3,9 +3,9 @@
 Patience Sort, Binary Search, DP
 
 ## Complexity
-Time: O(n^2). DP tracks all `nums[i]`, `nums[j]` s.t. `i < j` and `nums[i] < nums[j]`. In the worst case where `nums` is sorted, there are O(n^2) such pairs.
+Time: $O(n^2)$. DP tracks all `nums[i]`, `nums[j]` s.t. `i < j` and `nums[i] < nums[j]`. In the worst case where `nums` is sorted, there are O(n^2) such pairs.
 
-Space: O(n). Each `num` maps to one pair in `piles`.
+Space: $O(n)$. Each `num` maps to one pair in `piles`.
 ## Insights
 1. **Patience Sort** can find all the longest increasing subsequences(LIS). For each `num` in `nums`, patience sort chooses the left-most pile from `piles` that has a top number no less than `num` and put `num` on top of that pile. Below is an example of patience sort:
 ![Patience Sort](../images/673/1.jpg)

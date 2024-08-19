@@ -3,11 +3,11 @@
 Binary Search, Two Pointers, Sorting
 
 ## Complexity
-Time: O(nlog(k)), where
-- n = length of `houses` + length of `heaters`, and 
-- k = maximum distance between a house and a heater
+Time: $O(nlog(k))$, where
+- $n$ = length of `houses` + length of `heaters`, and 
+- $k$ = maximum distance between a house and a heater
 
-Space: O(1)
+Space: $O(1)$
 ## Insights
 1. To verify whether `heaters` can cover all `houses` with radius `r` efficiently, both arrays need to be sorted.
 2. For each heater, try cover as many houses before moving to the next.
